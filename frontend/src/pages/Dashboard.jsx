@@ -135,7 +135,7 @@ const Dashboard = () => {
                       placeholder="Enter entry/exit targets, stop loss, and rationale..." 
                       value={description} 
                       onChange={e => setDescription(e.target.value)}
-                      style={{ width: '100%', padding: '0.875rem 1rem 0.875rem 2.5rem', backgroundColor: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)', color: 'var(--text-main)', fontFamily: 'var(--font)', resize: 'vertical' }}
+                      style={{ resize: 'vertical' }}
                     />
                   </div>
                 </div>

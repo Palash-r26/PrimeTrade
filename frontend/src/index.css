@@ -335,7 +335,7 @@ a:hover {
   color: var(--text-muted);
 }
 
-.input-wrapper input {
+.input-wrapper input, .input-wrapper select, .input-wrapper textarea {
   width: 100%;
   background-color: var(--bg-input);
   border: 1px solid var(--border-color);
@@ -347,7 +347,7 @@ a:hover {
   transition: var(--transition);
 }
 
-.input-wrapper input:focus {
+.input-wrapper input:focus, .input-wrapper select:focus, .input-wrapper textarea:focus {
   outline: none;
   border-color: var(--border-focus);
 }
