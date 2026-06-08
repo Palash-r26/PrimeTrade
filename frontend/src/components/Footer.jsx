@@ -27,15 +27,6 @@ const Footer = () => {
 
         {/* Links Columns */}
         <div>
-          <h4 style={{ color: 'var(--text-main)', marginBottom: '1.25rem', fontSize: '0.95rem' }}>Platform</h4>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <li><Link to="/dashboard" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Dashboard</Link></li>
-            <li><Link to="/" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Features</Link></li>
-            <li><Link to="/" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Security</Link></li>
-          </ul>
-        </div>
-
-        <div>
           <h4 style={{ color: 'var(--text-main)', marginBottom: '1.25rem', fontSize: '0.95rem' }}>Company</h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li><Link to="/about" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>About Us</Link></li>
@@ -66,10 +57,6 @@ const Footer = () => {
         <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
           &copy; {new Date().getFullYear()} PrimeTrade Platform. All rights reserved.
         </p>
-        <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.85rem' }}>
-          <Link to="#" style={{ color: 'var(--text-muted)' }}>Privacy Policy</Link>
-          <Link to="#" style={{ color: 'var(--text-muted)' }}>Terms of Service</Link>
-        </div>
       </div>
     </footer>
   );

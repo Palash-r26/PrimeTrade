@@ -100,3 +100,40 @@ export const getMe = async (req: any, res: Response): Promise<void> => {
     res.status(500).json({ error: 'Server error' });
   }
 };
+
+const updateProfileSchema = z.object({
+  username: z.string().min(3).optional(),
+  email: z.string().email().optional(),
+});
+
+export const updateProfile = async (req: any, res: Response): Promise<void> => {
+  try {
+    const validatedData = updateProfileSchema.parse(req.body);
+    const { username, email } = validatedData;
+    
+    const user = await User.findById(req.user.id);
+    if (!user) {
+      res.status(404).json({ error: 'User not found' });
+      return;
+    }
+
+    if (username) user.username = username;
+    if (email) user.email = email;
+
+    await user.save();
+
+    res.json({
+      _id: user.id,
+      username: user.username,
+      email: user.email,
+      role: user.role,
+    });
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      res.status(400).json({ error: (error as any).errors });
+    } else {
+      console.error(error);
+      res.status(500).json({ error: 'Server error' });
+    }
+  }
+};
