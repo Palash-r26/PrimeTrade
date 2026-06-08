@@ -77,9 +77,9 @@ const Dashboard = () => {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <h2>Dashboard</h2>
+        <h2 className="page-title" style={{ marginBottom: 0 }}>Dashboard</h2>
         <button className="btn" onClick={() => { resetForm(); setShowForm(!showForm); }}>
-          {showForm ? 'Cancel' : 'Create Task'}
+          {showForm ? 'Close Form' : '+ Create Task'}
         </button>
       </div>
 
