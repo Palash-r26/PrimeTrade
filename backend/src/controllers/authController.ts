@@ -51,7 +51,7 @@ export const registerUser = async (req: Request, res: Response): Promise<void> =
     }
   } catch (error) {
     if (error instanceof z.ZodError) {
-      res.status(400).json({ error: error.errors });
+      res.status(400).json({ error: (error as any).errors });
     } else {
       console.error(error);
       res.status(500).json({ error: 'Server error' });
@@ -84,7 +84,7 @@ export const loginUser = async (req: Request, res: Response): Promise<void> => {
     }
   } catch (error) {
     if (error instanceof z.ZodError) {
-      res.status(400).json({ error: error.errors });
+      res.status(400).json({ error: (error as any).errors });
     } else {
       console.error(error);
       res.status(500).json({ error: 'Server error' });

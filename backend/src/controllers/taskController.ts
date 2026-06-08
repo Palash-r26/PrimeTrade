@@ -51,7 +51,7 @@ export const createTask = async (req: any, res: Response): Promise<void> => {
     res.status(201).json(task);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      res.status(400).json({ error: error.errors });
+      res.status(400).json({ error: (error as any).errors });
     } else {
       res.status(500).json({ error: 'Server error' });
     }
@@ -77,7 +77,7 @@ export const updateTask = async (req: any, res: Response): Promise<void> => {
     res.json(task);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      res.status(400).json({ error: error.errors });
+      res.status(400).json({ error: (error as any).errors });
     } else {
       res.status(500).json({ error: 'Server error' });
     }
