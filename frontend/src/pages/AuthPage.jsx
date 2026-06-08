@@ -48,41 +48,41 @@ const AuthPage = () => {
     <div className="container split-layout fade-up">
       {/* Left Content */}
       <div className="hero-content">
-        <div className="hero-badge">✨ PrimeTrade Vault Engine</div>
+        <div className="hero-badge">✨ PrimeTrade Task Engine</div>
         <h1 className="hero-title">
-          PrimeTrade Profile <br /><span className="text-accent">Platform</span>
+          PrimeTrade Task <br /><span className="text-accent">Platform</span>
         </h1>
         <p className="hero-desc">
-          Stop typing the same information. Build your dynamic profile vault and securely autofill applications across the web with our companion extension.
+          Manage your trading tasks, track your progress, and stay organized with the ultimate toolkit built for modern traders.
         </p>
         
         <div className="features-grid">
           <div className="feature-card">
             <div className="feature-icon">📁</div>
             <div className="feature-content">
-              <h4>Dynamic Data Vault</h4>
-              <p>Build custom sections and fields. Store exactly what you need.</p>
+              <h4>Dynamic Task Vault</h4>
+              <p>Create, update, and manage all your trading-related tasks in one secure place.</p>
             </div>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🌐</div>
+            <div className="feature-icon">📊</div>
             <div className="feature-content">
-              <h4>Browser Integration</h4>
-              <p>Instantly sync your vault to the PrimeTrade Chrome Extension.</p>
-            </div>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">⚡</div>
-            <div className="feature-content">
-              <h4>Universal Autofill</h4>
-              <p>Map your custom fields to any job application with one click.</p>
+              <h4>Real-Time Tracking</h4>
+              <p>Instantly view the status of your tasks with our intuitive, lightning-fast dashboard.</p>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-icon">🛡️</div>
             <div className="feature-content">
-              <h4>Privacy First</h4>
-              <p>Your data is securely stored and isolated. You control it.</p>
+              <h4>Role-Based Security</h4>
+              <p>Advanced access control ensures your data is protected and perfectly isolated.</p>
+            </div>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">⚡</div>
+            <div className="feature-content">
+              <h4>Fast & Scalable</h4>
+              <p>Built on a high-performance stack designed to seamlessly grow with your needs.</p>
             </div>
           </div>
         </div>

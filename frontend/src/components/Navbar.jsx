@@ -28,10 +28,11 @@ const Navbar = () => {
               <span style={{color: 'var(--text-muted)', fontSize: '0.875rem'}}>
                 {user.username} {user.role === 'admin' && '(Admin)'}
               </span>
+              <Link to="/dashboard" className="btn-outline" style={{ marginRight: '0.5rem' }}>Dashboard</Link>
               <button className="btn-outline" onClick={handleLogout}>Logout</button>
             </>
           ) : (
-            <Link to="/login" className="btn-outline">Extension</Link>
+            <Link to="/login" className="btn-outline">Login</Link>
           )}
         </div>
       </nav>
