@@ -48,41 +48,41 @@ const AuthPage = () => {
     <div className="container split-layout fade-up">
       {/* Left Content */}
       <div className="hero-content">
-        <div className="hero-badge">✨ PrimeTrade Task Engine</div>
+        <div className="hero-badge">✨ PrimeTrade Web3 Engine</div>
         <h1 className="hero-title">
-          PrimeTrade Task <br /><span className="text-accent">Platform</span>
+          Next-Gen Trading <br /><span className="text-accent">Intelligence</span>
         </h1>
         <p className="hero-desc">
-          Manage your trading tasks, track your progress, and stay organized with the ultimate toolkit built for modern traders.
+          Shape the future of crypto trading. Manage your portfolio, execute strategies, and stay ahead of the market with our advanced Web3 platform.
         </p>
         
         <div className="features-grid">
           <div className="feature-card">
             <div className="feature-icon">📁</div>
             <div className="feature-content">
-              <h4>Dynamic Task Vault</h4>
-              <p>Create, update, and manage all your trading-related tasks in one secure place.</p>
+              <h4>Smart Trade Management</h4>
+              <p>Create, update, and track all your active trades and strategies in one secure place.</p>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-icon">📊</div>
             <div className="feature-content">
-              <h4>Real-Time Tracking</h4>
-              <p>Instantly view the status of your tasks with our intuitive, lightning-fast dashboard.</p>
+              <h4>Real-Time Analytics</h4>
+              <p>Instantly view the status of your trades with our intuitive, lightning-fast dashboard.</p>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-icon">🛡️</div>
             <div className="feature-content">
               <h4>Role-Based Security</h4>
-              <p>Advanced access control ensures your data is protected and perfectly isolated.</p>
+              <p>Advanced access control ensures your data and crypto assets are protected and perfectly isolated.</p>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-icon">⚡</div>
             <div className="feature-content">
               <h4>Fast & Scalable</h4>
-              <p>Built on a high-performance stack designed to seamlessly grow with your needs.</p>
+              <p>Built on a high-performance stack designed to seamlessly grow with your trading volume.</p>
             </div>
           </div>
         </div>
