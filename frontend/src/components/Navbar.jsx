@@ -12,24 +12,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar container">
-      <Link to="/" className="navbar-brand">PrimeTrade</Link>
-      <div className="navbar-menu">
-        {user ? (
-          <>
-            <span style={{color: 'var(--text-secondary)'}}>
-              Welcome, {user.username} {user.role === 'admin' && '(Admin)'}
-            </span>
-            <button className="btn btn-outline" onClick={handleLogout}>Logout</button>
-          </>
-        ) : (
-          <>
-            <Link to="/login" className="btn btn-outline">Login</Link>
-            <Link to="/register" className="btn">Register</Link>
-          </>
-        )}
-      </div>
-    </nav>
+    <div className="navbar-wrapper">
+      <nav className="navbar fade-up">
+        <Link to="/" className="brand">
+          <span className="brand-icon">❖</span> PrimeTrade
+        </Link>
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="#">About</Link>
+          <Link to="#">Developers</Link>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {user ? (
+            <>
+              <span style={{color: 'var(--text-muted)', fontSize: '0.875rem'}}>
+                {user.username} {user.role === 'admin' && '(Admin)'}
+              </span>
+              <button className="btn-outline" onClick={handleLogout}>Logout</button>
+            </>
+          ) : (
+            <Link to="/login" className="btn-outline">Extension</Link>
+          )}
+        </div>
+      </nav>
+    </div>
   );
 };
 
