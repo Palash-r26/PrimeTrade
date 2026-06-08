@@ -19,15 +19,15 @@ const Navbar = () => {
         </Link>
         <div className="nav-links">
           <Link to="/">Home</Link>
-          <Link to="#">About</Link>
-          <Link to="#">Developers</Link>
+          <Link to="/about">About</Link>
+          <Link to="/developers">Developers</Link>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           {user ? (
             <>
-              <span style={{color: 'var(--text-muted)', fontSize: '0.875rem'}}>
+              <Link to="/settings" style={{color: 'var(--text-muted)', fontSize: '0.875rem'}}>
                 {user.username} {user.role === 'admin' && '(Admin)'}
-              </span>
+              </Link>
               <Link to="/dashboard" className="btn-outline" style={{ marginRight: '0.5rem' }}>Dashboard</Link>
               <button className="btn-outline" onClick={handleLogout}>Logout</button>
             </>

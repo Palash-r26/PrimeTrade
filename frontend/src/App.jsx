@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthContext } from './context/AuthContext';
 import AuthPage from './pages/AuthPage';
 import Dashboard from './pages/Dashboard';
+import AboutPage from './pages/AboutPage';
+import Developers from './pages/Developers';
+import Settings from './pages/Settings';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -20,6 +23,13 @@ function App() {
         <Route path="/login" element={<AuthPage />} />
         <Route path="/register" element={<AuthPage />} />
         <Route path="/" element={<AuthPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/developers" element={<Developers />} />
+        <Route path="/settings" element={
+          <PrivateRoute>
+            <Settings />
+          </PrivateRoute>
+        } />
         <Route path="/dashboard" element={
           <PrivateRoute>
             <div className="container fade-up">
